@@ -1,0 +1,25 @@
+import java.util.*;
+ class Stringlen
+{
+   void String(String str)
+   {
+   	char[] ch=str.toCharArray();
+   	int count=0;
+   	for(char c : ch)
+   	{
+   		count++;
+   	}
+   	System.out.println("\nLength:"+count);
+   }
+}
+class StringLength
+{
+   public static void main(String args[])
+   {
+   	Scanner sc=new Scanner(System.in);
+   	System.out.println("Enter string...\n");
+   	String str=sc.nextLine();
+   	Stringlen stobj=new Stringlen();
+   	stobj.String(str);
+   }
+}
