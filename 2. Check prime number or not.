@@ -11,7 +11,7 @@ public class CheckPrime
 			num=sc.nextInt();
 		}
 		boolean flag=false;
-		for(int i=2;i<num/2;i++)
+		for(int i=2;i<=num/2;i++)
 		{
 			if(num % i==0)
 			{
@@ -19,7 +19,7 @@ public class CheckPrime
 				break;
 			}
 		}
-		if(!flag)
+		if(flag==false)
 			System.out.println(num +"is a prime number");
 		else
 			System.out.println(num +"is not a prime number");
